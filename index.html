@@ -417,10 +417,12 @@
     </div>
     
     <div class="contact-grid">
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Placeholder)');">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message..." required></textarea>
+      <form class="contact-form" action="https://formsubmit.co/2300030131cseelge@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message..." required></textarea>
+        <!-- Disable captcha for better UX -->
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit">Send Message</button>
       </form>
 
